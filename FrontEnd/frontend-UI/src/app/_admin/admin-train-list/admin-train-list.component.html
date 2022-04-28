@@ -1,0 +1,35 @@
+
+<div class="mat-table">
+
+<h2 style="text-align: center;"> Train List</h2>
+
+<table class="table table-hover">
+<thead class="thead-dark">
+    <tr>
+        <th scope="col"> Train Id </th>
+        <th scope="col"> Train Name </th>
+        <th scope="col"> Train Day </th>
+        <th scope="col"> Train Seat </th> 
+        <th scope="col"> Train Source </th>
+        <th scope="col"> Train Destination </th>
+        <th scope="col"> Actions </th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let train of trains">
+        <td>{{train.trainId}}</td>
+        <td>{{train.trainName}}</td>
+        <td>{{train.trainDay}}</td>
+        <td>{{train.trainSeat}}</td>
+        <td>{{train.trainSource}}</td>
+        <td>{{train.trainDestination}}</td> 
+        <td> 
+          <button (click)="updateTrain(train.trainId)" class="btn btn-info"> Update </button>
+          <button (click)="deleteTrain(train.trainId)" class="btn btn-danger" style="margin-left: 10px"> Delete </button> 
+          <!-- <button (click)="trainDetails(train.trainId)" class="btn btn-info" style="margin-left: 10px"> View </button>  -->
+        </td>
+    </tr>
+</tbody>
+</table>
+
+</div>

@@ -1,0 +1,25 @@
+.bg {
+    /* The image used */
+    background-image: url("/assets/trainList.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  tr {
+    background-color:shade;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+  tr:hover {background-color: lightblue}
+

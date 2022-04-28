@@ -1,0 +1,141 @@
+<h1>Booking Info Here</h1>
+
+<div class="row">
+
+    <div class="col-lg-9 col-sm-12 mt-5">
+        <input type="text" placeholder="Enter Booking ID" class="form-control" name="id" [(ngModel)] = "id">
+    </div>
+
+    <div class="col-lg-3 col-sm-12 mt-5">
+        <button type="button" class="btn btn-info" (click) = "searchFrom()" >Search</button>
+    </div>
+
+    <!-- <div class="col-lg-9 col-sm-12 mt-5">
+        <input type="text" placeholder="Enter Destination" class="form-control" name="trainTo" [(ngModel)]="trainTo">
+    </div>
+    
+    <div class="col-lg-3 col-sm-12 mt-5">
+        <button type="button" class="btn btn-info" (click) = "searchTo()">Search</button>
+    </div> -->
+
+    <!-- <div class="col-lg-3 col-sm-12 mt-5">
+        <button type="button" class="btn btn-info" (click) = "searchbw(trainFrom,trainTo)">SearchBW</button>
+    </div> -->
+
+</div>
+
+<h2 class="mt-5">Results</h2>
+<div class="row col-lg-12 col-sm-12">
+  
+    <table class="table table-striped">
+        <thead style="color: darkolivegreen; background-color: lightblue;">
+            <tr>
+                <th>id</th>
+                <th>passengerName</th>
+                <th>passengerAddress</th>
+                <th>berthPrefrence</th>
+                <th>doj</th>
+                <th>gender</th>
+                <th>source</th>
+                <th>destination</th>     
+                <th>quantity</th>      
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let booking of bookings">
+          <td>{{id}}</td>
+          <td>{{booking.passengerName}}</td>
+          <td>{{booking.passengerAddress}}</td>
+          <td>{{booking.berthPrefrence}}</td>
+          <td>{{booking.doj}}</td>
+          <td>{{booking.gender}}</td>
+          <td>{{booking.source}}</td>
+          <td>{{booking.destination}}</td>
+          <td>{{booking.quantity}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- <form (ngSubmit) = "onSubmit()" >
+
+        <div class="col-lg-9 col-sm-12 mt-5">
+            <input type="text" placeholder="Booking Id Here..." class="form-control" name="trainFrom" [(ngModel)]= "id">
+
+            <div class="col-lg-3 col-sm-12 mt-5">
+                <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+
+            
+          
+        </div> -->
+
+        
+
+ 
+
+        <!-- <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>passengerName</th>
+                    <th>passengerAddress</th>
+                    <th>berthPrefrence</th>
+                    <th>doj</th>
+                    <th>gender</th>
+                    <th>source</th>
+                    <th>destination</th>
+                    <th>quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let booking of bookings" >
+        
+                
+                    <td> {{booking.passengerName}}</td>
+                    <td> {{booking.passengerAddress}}</td>
+                    <td> {{booking.passengerName}}</td>
+                    <td> {{booking.doj}}</td>
+                    <td> {{booking.gender}}</td>
+                    <td> {{booking.source}}</td>
+                    <td> {{booking.destination}}</td>
+                    <td> {{booking.quantity}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+         -->
+      
+
+<!-- </form> -->
+
+
+<!-- <table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>passengerName</th>
+            <th>passengerAddress</th>
+            <th>berthPrefrence</th>
+            <th>doj</th>
+            <th>gender</th>
+            <th>source</th>
+            <th>destination</th>
+            <th>quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let booking of bookings" >
+
+        
+            <td> {{booking.passengerName}}</td>
+            <td> {{booking.passengerAddress}}</td>
+            <td> {{booking.passengerName}}</td>
+            <td> {{booking.doj}}</td>
+            <td> {{booking.gender}}</td>
+            <td> {{booking.source}}</td>
+            <td> {{booking.destination}}</td>
+            <td> {{booking.quantity}}</td>
+            
+        </tr>
+    </tbody>
+</table> -->

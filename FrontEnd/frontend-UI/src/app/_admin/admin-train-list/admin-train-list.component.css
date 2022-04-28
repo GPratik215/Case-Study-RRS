@@ -1,0 +1,7 @@
+.example-container {
+    overflow-x: scroll;
+  }
+
+  .mat-table {
+    overflow-x: scroll;
+  }

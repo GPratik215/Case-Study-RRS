@@ -1,0 +1,35 @@
+<!-- <div class="bg"> -->
+
+  <div>
+
+
+
+<!-- <h1 class="bg-primary" style="text-align: center;"> Train List </h1> -->
+
+<table class="table table-bordered">
+<thead class="thead-dark">
+
+    <tr>
+        <th scope="col"> Train Id </th>
+        <th scope="col"> Train Name </th>
+        <th scope="col"> Train Day </th>
+        <th scope="col"> Train Seat </th> 
+        <th scope="col"> Train Source </th>
+        <th scope="col"> Train Destination </th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let train of trains">
+        <td>{{train.trainId}}</td>
+        <td>{{train.trainName}}</td>
+        <td>{{train.trainDay}}</td>
+        <td>{{train.trainSeat}}</td>
+        <td>{{train.trainSource}}</td>
+        <td>{{train.trainDestination}}</td> 
+    </tr>
+</tbody>
+</table>
+
+</div>
+

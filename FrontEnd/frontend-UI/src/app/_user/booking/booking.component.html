@@ -1,0 +1,124 @@
+
+<div class="bg">
+
+<div class="col-md-6 offset-md-3" style="height: 550px; overflow-y: scroll;">
+
+  <h2 style="color: white; text-align: center;" class="font-weight-bold font-italic"> <mark>BOOK TRAIN TICKETS</mark></h2>
+
+  <div class="col-md-12">
+
+    <!-- <h3>Book Train Tickets Here..</h3> -->
+ 
+    <form [formGroup]= "bookingForm" (ngSubmit) = "onSubmit()" >
+
+      <div class="form-group">
+        <label style="color: black;"> <h2>Name</h2></label>
+        <input type="text" class="form-control" id="passengerName" placeholder="Enter Passenger Name"
+        [(ngModel)] = "booking.passengerName" name="passengerName" formControlName="passengerName">
+
+        <span *ngIf= "bookingForm.get('passengerName')?.invalid && bookingForm.get('passengerName')?.touched" class="text-danger" >This field is required</span>
+
+      </div>
+
+      <div class="form-group">
+        <label style="color: black;" for="exampleInputPassword1"> <h2>Address</h2></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Address"
+        [(ngModel)] = "booking.passengerAddress" name="passengerAddress" formControlName="passengerAddress">
+
+        <span *ngIf= "bookingForm.get('passengerAddress')?.invalid && bookingForm.get('passengerAddress')?.touched" class="text-danger" >Address is required(minimum length 10)</span>
+
+      </div>
+
+      <div class="form-group">
+
+        <label style="color: black;" for="exampleFormControlSelect1"> <h2>Choose Berth Prefrence</h2></label>
+        <select class="form-control" id="exampleFormControlSelect1"
+            [(ngModel)] = "booking.berthPrefrence" name="berthPrefrence" formControlName="berthPrefrence">
+
+          <option>Middle Berth</option>
+          <option>Lower Berth</option>
+          <option>Side Upper Berth</option>
+          <option>Side Lower Berth</option>
+
+        </select>
+
+        <span *ngIf= "bookingForm.get('berthPrefrence')?.invalid && bookingForm.get('berthPrefrence')?.touched" class="text-danger" >This field is required</span>
+     
+    </div>
+
+    <div class="form-group">
+      <label style="color: black;" for="exampleInputPassword1"> <h2>Date Of Journey</h2></label>
+      <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Enter Date Of Journey"
+      [(ngModel)] = "booking.doj" name="doj" formControlName="doj" >
+
+      <span *ngIf= "bookingForm.get('doj')?.invalid && bookingForm.get('doj')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+
+    <div class="form-group">
+      <label style="color: black;" for="exampleFormControlSelect1"> <h2>Choose Gender</h2></label>
+      <select class="form-control" id="exampleFormControlSelect1"
+          [(ngModel)] = "booking.gender" name="gender" formControlName="gender">
+
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <span *ngIf= "bookingForm.get('gender')?.invalid && bookingForm.get('gender')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+    <div class="form-group">
+      <label style="color: black;" for="exampleFormControlSelect1"><h2>Source</h2></label>
+      <select class="form-control" id="exampleFormControlSelect1"
+          [(ngModel)] = "booking.source" name="source" formControlName="source">
+
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Rawalpindi</option>
+        <option>Sialkot</option>
+      </select>
+
+      <span *ngIf= "bookingForm.get('source')?.invalid && bookingForm.get('source')?.touched" class="text-danger" >This field is required</span>
+
+      </div>
+
+      <div class="form-group">
+      <label style="color: black;" for="exampleFormControlSelect1"><h2>Destination</h2></label>
+      <select class="form-control" id="exampleFormControlSelect1"
+          [(ngModel)] = "booking.destination" name="destination" formControlName="destination">
+
+        <option>Quetta</option>
+        <option>Muzaffargarh</option>
+        <option>Hasilpur</option>
+        <option>Shikarpur</option>
+      </select>
+
+      <span *ngIf= "bookingForm.get('destination')?.invalid && bookingForm.get('destination')?.touched" class="text-danger" >This field is required</span>
+
+      </div>
+
+      <div class="form-group">
+        <label style="color: black;" for="exampleInputPassword1"><h2>No. of Passengers</h2></label>
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Passenger" formControlName="noOfPassengers"
+        [(ngModel)] = "booking.quantity" name="quantity" formControlName="quantity">
+
+        <span *ngIf= "bookingForm.get('quantity')?.invalid && bookingForm.get('quantity')?.touched" class="text-danger" >This field is required</span>
+
+      </div>
+
+      <button [disabled]= "bookingForm.invalid" class="btn btn-success" type="submit">Submit</button>
+
+    
+      <!-- <button class="btn btn-success" type="submit">Submit</button> -->
+      <!-- <button class="btn btn-info" type="reset">Reset</button> -->
+  
+  </form>
+<br>
+
+</div>
+</div>
+  
+    
+</div>

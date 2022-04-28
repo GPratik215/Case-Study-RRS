@@ -1,0 +1,147 @@
+<!-- <img src="assets/logo.jpg"> -->
+
+      <!-- <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> -->
+            <!-- <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            RAIL ON THE GO -->
+          <!-- </a> -->
+
+          <!-- <div style=" text-align: center; color: white;">
+            <h1>{{dateTime | date:'medium'}}</h1>
+          </div> -->
+
+        <!-- </div>
+      </nav> -->
+
+  <!-- <div class="text-center">
+      <nav>
+        <div class="navbar navbar-dark bg-dark" style="color: white;">
+          <a class="navbar-brand" >RAIL-ONtheGO</a>
+        </div>
+      </nav>
+  </div>     -->
+      
+
+ <nav class="navbar navbar-dark bg-dark"> 
+
+ <!-- <h1 class="text-center">{{title}}</h1> -->
+
+ <!-- <nav>
+    <div class="navbar navbar-dark bg-dark" style="color: white;">
+      <a class="navbar-brand" >ONLINE RAILWAY RESERVATION SYSTEM</a>
+    </div>
+  </nav> -->
+
+  <form class="form-inline">
+    <button class="btn btn-outline-success" type="button;">
+      <a routerLink="home" routerLinkActive="active" class="nav-link" style="color: white;">Home</a>
+    </button> 
+</form>
+
+<form class="form-inline">
+  <button class="btn btn-outline-success" type="button">
+    <a routerLink="train-list" routerLinkActive="active" class="nav-link" style="color: white;">Train Avaibility</a>
+  </button> 
+</form>
+
+<!-- <li class="nav-item">
+  <button class="btn btn-outline-success" type="button">
+  <a class="nav-link active" aria-current="page" routerLink="admin"
+  *ngIf="userService.roleMatch(['Admin'])"
+  >Admin Dashboard</a>
+  </button>
+</li> -->
+
+  <button style="border: none;" class="btn btn-outline-success" type="button">
+
+  <a class="nav-link active" aria-current="page" routerLink="admin-train-details" style="color: white;"
+  *ngIf="userService.roleMatch(['Admin'])"
+  >Manage Trains</a>
+  </button>
+
+
+  <button style="border: none;" class="btn btn-outline-success" type="button">
+
+  <a class="nav-link active" aria-current="page" routerLink="add-train" style="color: white;"
+  *ngIf="userService.roleMatch(['Admin'])"
+  >Add Trains</a>
+
+</button>
+
+
+
+<button style="border: none;" class="btn btn-outline-success" type="button">
+
+  <a class="nav-link active" aria-current="page" routerLink="booking" style="color: white;"
+  *ngIf="userService.roleMatch(['User'])"
+              >Book Train Tickets</a>
+
+</button>
+
+<!-- <button style="border: none;" class="btn btn-outline-success" type="button">
+
+  <a class="nav-link active" aria-current="page" routerLink="booking-details" style="color: white;"
+  *ngIf="userService.roleMatch(['User'])"
+              >Booking Details</a>
+
+</button> -->
+
+
+<!-- <button style="border: none;" class="btn btn-outline-success" type="button">
+
+  <a class="nav-link active" aria-current="page" routerLink="stripe-payment" style="color: white;"
+  *ngIf="userService.roleMatch(['User'])"
+              >Payment</a>
+
+</button> -->
+
+<form class="form-inline">
+
+  <button *ngIf="! isLoggedIn()" class="btn btn-outline-success" type="button">
+  
+    <a routerLink="registration" routerLinkActive="active" class="nav-link" style="color: white;">Sign Up</a>
+
+  </button>
+
+</form>
+
+<form class="form-inline">
+
+  <button *ngIf="! isLoggedIn()"  class="btn btn-outline-success" type="button">
+  
+    <a routerLink="login" routerLinkActive="active" class="nav-link" style="color: white;">Login</a>
+
+  </button>
+
+
+</form>
+
+<form class="form-inline">
+
+  <button style="border: none;" *ngIf="isLoggedIn()"  class="btn btn-outline-danger" type="button" (click)="logout()">
+  
+    <a routerLink="login" routerLinkActive="active" class="nav-link" style="color: white;">Logout</a>
+
+  </button>
+
+
+</form>
+
+ </nav>
+
+
+<footer class="footer">
+
+  <!-- <div style=" text-align: center; color: white;">
+    <h1>{{dateTime | date:'medium'}}</h1>
+  </div> -->
+
+  <div class="container">
+    <span>All Rights Reserved 2022 @Pratik Gupta</span>
+  </div>
+
+</footer>
+
+<!-- <button *ngIf="isLoggedIn()" type="button" class="btn btn-danger" (click)="logout()" >Logout</button> -->
+

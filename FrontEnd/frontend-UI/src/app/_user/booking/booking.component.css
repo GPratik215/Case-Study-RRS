@@ -1,0 +1,42 @@
+mat-form-field{
+    width: 100%;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/assets/book.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.form-control.ng-touched.ng-invalid {
+  border:2px solid red;
+}
+
+.form-control.ng-touched.ng-valid {
+  border:2px solid green;
+}

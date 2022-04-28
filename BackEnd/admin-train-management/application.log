@@ -1,0 +1,835 @@
+2022-04-28 00:04:05,051 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 00:09:05,145 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 00:14:05,149 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 00:19:05,159 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:05:42,377 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-02.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 01:05:42,377 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-00.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 01:05:42,691 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:27, serverValue:12870}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 01:05:42,697 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=183139700, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-02.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6269313107f64454f267e0a8, counter=3}, lastWriteDate=Thu Apr 28 01:05:42 IST 2022, lastUpdateTimeNanos=30437851040100}
+2022-04-28 01:05:42,700 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:28, serverValue:14895}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 01:05:42,701 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=216937900, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-00.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=62692b0c385bff5a1269099a, counter=4}, lastWriteDate=Thu Apr 28 01:05:42 IST 2022, lastUpdateTimeNanos=30437860017800}
+2022-04-28 01:05:42,775 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-01.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 01:05:43,107 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:29, serverValue:14149}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 01:05:43,107 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qo0sr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=180650700, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-01.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000a9, setVersion=6, topologyVersion=TopologyVersion{processId=62692f3581532edb1954924f, counter=6}, lastWriteDate=Thu Apr 28 01:05:42 IST 2022, lastUpdateTimeNanos=30438266304500}
+2022-04-28 01:05:43,108 INFO  SLF4JLogger:71 - [] Discovered replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 01:05:47,581 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:30, serverValue:12872}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 01:05:48,456 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:31, serverValue:14895}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 01:05:48,471 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:32, serverValue:14167}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 01:06:39,433 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:11:39,448 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:16:39,464 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:21:39,466 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:26:39,474 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:31:39,487 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:36:11,166 INFO  SLF4JLogger:71 - [] Closed connection [connectionId{localValue:20, serverValue:10680}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017 because there was a socket exception raised on another connection from this pool.
+2022-04-28 01:36:11,661 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:33, serverValue:14781}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 01:36:11,762 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:36:11,763 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:36:11,764 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:36:24,805 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:36:24,806 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:36:24,807 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:36:37,971 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:36:37,972 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:36:37,972 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:36:39,494 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:37:24,713 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:37:24,713 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:37:24,714 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:37:37,413 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:37:37,415 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:37:37,415 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:37:59,177 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:37:59,178 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:37:59,179 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:38:15,722 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:38:15,723 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:38:15,724 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:38:22,984 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:38:22,985 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:38:22,986 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:39:36,523 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:39:36,524 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:39:36,524 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:39:43,643 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:39:43,644 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:39:43,645 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:39:52,908 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:39:52,909 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:39:52,909 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:40:01,944 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:40:01,944 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:40:01,945 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:40:09,884 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 01:40:09,886 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 01:40:09,887 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 01:41:39,502 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 01:46:16,445 INFO  RedirectingEurekaHttpClient:93 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775)
+	... 22 more
+
+2022-04-28 01:46:16,445 INFO  RedirectingEurekaHttpClient:93 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": An established connection was aborted by the software in your host machine; nested exception is java.net.SocketException: An established connection was aborted by the software in your host machine stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": An established connection was aborted by the software in your host machine; nested exception is java.net.SocketException: An established connection was aborted by the software in your host machine
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:791)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:726)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55)
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:64)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:806)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+
+2022-04-28 01:46:16,446 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": An established connection was aborted by the software in your host machine; nested exception is java.net.SocketException: An established connection was aborted by the software in your host machine
+2022-04-28 01:46:16,446 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-04-28 01:46:16,453 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775)
+	... 20 more
+
+2022-04-28 01:46:16,453 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775)
+	... 23 more
+
+2022-04-28 01:46:16,453 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-04-28 01:46:16,453 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-04-28 01:46:16,454 INFO  DiscoveryClient:1021 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-04-28 01:46:16,457 ERROR DiscoveryClient:907 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-28 01:46:21,203 INFO  EurekaServiceRegistry:62 - [] Unregistering application RAILWAY-INFO with eureka with status DOWN
+2022-04-28 01:46:21,205 INFO  DiscoveryClient$3:1352 - [] Saw local status change event StatusChangeEvent [timestamp=1651090581205, current=DOWN, previous=UP]
+2022-04-28 01:46:21,205 INFO  DiscoveryClient:873 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081: registering service...
+2022-04-28 01:46:21,216 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/RAILWAY-INFO": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/RAILWAY-INFO": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775)
+	... 22 more
+
+2022-04-28 01:46:21,216 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/RAILWAY-INFO": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-04-28 01:46:21,218 WARN  DiscoveryClient:878 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-28 01:46:21,218 WARN  InstanceInfoReplicator:125 - [] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-28 01:46:21,414 INFO  SLF4JLogger:71 - [] Closed connection [connectionId{localValue:33, serverValue:14781}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017 because the pool has been closed.
+2022-04-28 01:46:21,662 INFO  DiscoveryClient:935 - [] Shutting down DiscoveryClient ...
+2022-04-28 01:46:24,681 INFO  DiscoveryClient:971 - [] Unregistering ...
+2022-04-28 01:46:24,686 INFO  RedirectingEurekaHttpClient:84 - [] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:601)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:395)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:141)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1111)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1080)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:996)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775)
+	... 36 more
+
+2022-04-28 01:46:24,686 WARN  RetryableEurekaHttpClient:130 - [] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-04-28 01:46:24,687 ERROR DiscoveryClient:975 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:395)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:141)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1111)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1080)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:996)
+2022-04-28 01:46:24,693 INFO  DiscoveryClient:960 - [] Completed shut down of DiscoveryClient
+2022-04-28 09:16:45,408 INFO  StartupInfoLogger:55 - [] Starting RailwayInfoApplication using Java 17.0.1 on LAPTOP-42IQ07T3 with PID 2632 (C:\Case Study\Backend\admin-train-management\target\classes started by Pratik Gupta in C:\Case Study\Backend\admin-train-management)
+2022-04-28 09:16:45,413 INFO  SpringApplication:660 - [] No active profile set, falling back to default profiles: default
+2022-04-28 09:16:46,289 INFO  RepositoryConfigurationDelegate:128 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-28 09:16:46,402 INFO  RepositoryConfigurationDelegate:188 - [] Finished Spring Data repository scanning in 109 ms. Found 1 MongoDB repository interfaces.
+2022-04-28 09:16:46,621 INFO  GenericScope:288 - [] BeanFactory id=d7cd74c1-81a6-3ea9-83a6-2fbcda230b9b
+2022-04-28 09:16:46,970 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2022-04-28 09:16:46,980 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2022-04-28 09:16:46,981 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-28 09:16:47,124 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2022-04-28 09:16:47,124 INFO  ServletWebServerApplicationContext:289 - [] Root WebApplicationContext: initialization completed in 1654 ms
+2022-04-28 09:16:47,470 INFO  SLF4JLogger:71 - [] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.qo0sr.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-12zgs7-shard-0'}
+2022-04-28 09:16:47,537 INFO  SLF4JLogger:71 - [] Adding discovered server cluster0-shard-00-00.qo0sr.mongodb.net:27017 to client view of cluster
+2022-04-28 09:16:47,549 WARN  CustomConversions:260 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-28 09:16:47,570 INFO  SLF4JLogger:71 - [] Adding discovered server cluster0-shard-00-01.qo0sr.mongodb.net:27017 to client view of cluster
+2022-04-28 09:16:47,571 INFO  SLF4JLogger:71 - [] Adding discovered server cluster0-shard-00-02.qo0sr.mongodb.net:27017 to client view of cluster
+2022-04-28 09:16:47,674 WARN  CustomConversions:260 - [] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:4, serverValue:24427}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:5, serverValue:22410}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:6, serverValue:24427}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:1, serverValue:23912}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,294 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=367491000, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-02.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6269313107f64454f267e0a8, counter=3}, lastWriteDate=Thu Apr 28 09:16:47 IST 2022, lastUpdateTimeNanos=59905114120600}
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:3, serverValue:23804}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,293 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:2, serverValue:22410}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,294 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=369480500, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-00.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=62692b0c385bff5a1269099a, counter=4}, lastWriteDate=Thu Apr 28 09:16:47 IST 2022, lastUpdateTimeNanos=59905114154200}
+2022-04-28 09:16:48,294 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qo0sr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=359783200, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-01.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000a9, setVersion=6, topologyVersion=TopologyVersion{processId=62692f3581532edb1954924f, counter=6}, lastWriteDate=Thu Apr 28 09:16:47 IST 2022, lastUpdateTimeNanos=59905112834200}
+2022-04-28 09:16:48,295 INFO  SLF4JLogger:71 - [] Setting max election id to 7fffffff00000000000000a9 from replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,296 INFO  SLF4JLogger:71 - [] Setting max set version to 6 from replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,296 INFO  SLF4JLogger:71 - [] Discovered replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:16:48,303 INFO  PropertySourcedRequestMappingHandlerMapping:69 - [] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-28 09:16:48,645 INFO  DiscoveryClientOptionalArgsConfiguration:68 - [] Eureka HTTP Client uses RestTemplate.
+2022-04-28 09:16:48,771 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:79 - [] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-04-28 09:16:48,799 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2022-04-28 09:16:48,879 INFO  DiscoveryClient:372 - [] Initializing Eureka in region us-east-1
+2022-04-28 09:16:48,886 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:16:48,925 INFO  DiscoveryClient:1007 - [] Disable delta property : false
+2022-04-28 09:16:48,925 INFO  DiscoveryClient:1008 - [] Single vip registry refresh property : null
+2022-04-28 09:16:48,926 INFO  DiscoveryClient:1009 - [] Force full registry fetch : false
+2022-04-28 09:16:48,926 INFO  DiscoveryClient:1010 - [] Application is null : false
+2022-04-28 09:16:48,926 INFO  DiscoveryClient:1011 - [] Registered Applications size is zero : true
+2022-04-28 09:16:48,926 INFO  DiscoveryClient:1013 - [] Application version is -1: true
+2022-04-28 09:16:48,926 INFO  DiscoveryClient:1097 - [] Getting all instance registry info from the eureka server
+2022-04-28 09:16:49,077 INFO  DiscoveryClient:1106 - [] The response status is 200
+2022-04-28 09:16:49,082 INFO  DiscoveryClient:1321 - [] Starting heartbeat executor: renew interval is: 30
+2022-04-28 09:16:49,089 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-28 09:16:49,104 INFO  DiscoveryClient:492 - [] Discovery Client initialized at timestamp 1651117609103 with initial instances count: 0
+2022-04-28 09:16:49,107 INFO  EurekaServiceRegistry:41 - [] Registering application RAILWAY-INFO with eureka with status UP
+2022-04-28 09:16:49,108 INFO  DiscoveryClient$3:1352 - [] Saw local status change event StatusChangeEvent [timestamp=1651117609108, current=UP, previous=STARTING]
+2022-04-28 09:16:49,110 INFO  DiscoveryClient:873 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081: registering service...
+2022-04-28 09:16:49,137 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-28 09:16:49,138 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2022-04-28 09:16:49,160 INFO  DiscoveryClient:882 - [] DiscoveryClient_RAILWAY-INFO/LAPTOP-42IQ07T3.lan:Railway-info:8081 - registration status: 204
+2022-04-28 09:16:49,218 INFO  DocumentationPluginsBootstrapper:160 - [] Context refreshed
+2022-04-28 09:16:49,239 INFO  DocumentationPluginsBootstrapper:163 - [] Found 1 custom documentation plugin(s)
+2022-04-28 09:16:49,276 INFO  ApiListingReferenceScanner:41 - [] Scanning for api listing references
+2022-04-28 09:16:49,443 INFO  StartupInfoLogger:61 - [] Started RailwayInfoApplication in 4.596 seconds (JVM running for 5.068)
+2022-04-28 09:17:19,089 INFO  DiscoveryClient:1007 - [] Disable delta property : false
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1008 - [] Single vip registry refresh property : null
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1009 - [] Force full registry fetch : false
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1010 - [] Application is null : false
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1011 - [] Registered Applications size is zero : true
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1013 - [] Application version is -1: false
+2022-04-28 09:17:19,090 INFO  DiscoveryClient:1097 - [] Getting all instance registry info from the eureka server
+2022-04-28 09:17:19,097 INFO  DiscoveryClient:1106 - [] The response status is 200
+2022-04-28 09:19:26,242 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-28 09:19:26,243 INFO  FrameworkServlet:525 - [] Initializing Servlet 'dispatcherServlet'
+2022-04-28 09:19:26,267 INFO  FrameworkServlet:547 - [] Completed initialization in 24 ms
+2022-04-28 09:19:26,889 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:7, serverValue:23929}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 09:19:27,001 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 09:19:27,001 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 09:19:27,001 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 09:21:48,933 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:26:48,954 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:31:48,958 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:36:48,960 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:41:48,963 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:46:48,973 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:51:18,419 WARN  DispatcherServlet:1271 - [] No mapping for GET /
+2022-04-28 09:51:18,450 WARN  DispatcherServlet:1271 - [] No mapping for GET /csrf
+2022-04-28 09:51:48,977 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 09:56:48,990 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:01:48,999 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:06:49,014 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:11:49,019 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:16:49,023 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:25:28,551 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-02.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 10:25:28,571 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-00.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 10:25:28,619 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-01.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 10:25:28,915 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:10, serverValue:25464}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 10:25:28,917 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qo0sr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=186206200, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-01.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000a9, setVersion=6, topologyVersion=TopologyVersion{processId=62692f3581532edb1954924f, counter=6}, lastWriteDate=Thu Apr 28 10:25:28 IST 2022, lastUpdateTimeNanos=64025742288700}
+2022-04-28 10:25:28,919 INFO  SLF4JLogger:71 - [] Discovered replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 10:25:28,928 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:9, serverValue:25937}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 10:25:28,928 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:8, serverValue:23938}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 10:25:28,929 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=249896000, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-00.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=62692b0c385bff5a1269099a, counter=4}, lastWriteDate=Thu Apr 28 10:25:28 IST 2022, lastUpdateTimeNanos=64025755696100}
+2022-04-28 10:25:28,929 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=192752600, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-02.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6269313107f64454f267e0a8, counter=3}, lastWriteDate=Thu Apr 28 10:25:28 IST 2022, lastUpdateTimeNanos=64025755912700}
+2022-04-28 10:25:36,736 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:11, serverValue:23940}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 10:25:36,736 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:12, serverValue:25941}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 10:25:36,736 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:13, serverValue:25457}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 10:26:49,097 WARN  DispatcherServlet:1271 - [] No mapping for GET /
+2022-04-28 10:26:49,157 WARN  DispatcherServlet:1271 - [] No mapping for GET /csrf
+2022-04-28 10:26:56,286 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:31:56,308 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:36:56,365 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:38:49,772 INFO  SLF4JLogger:71 - [] Closed connection [connectionId{localValue:7, serverValue:23929}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017 because there was a socket exception raised on another connection from this pool.
+2022-04-28 10:38:50,362 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:14, serverValue:25823}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 10:38:50,473 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:38:50,475 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:38:50,477 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:38:53,922 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:38:53,922 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:38:53,922 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:39:32,233 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:39:32,236 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:39:32,236 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:39:42,849 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:39:42,850 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:39:42,851 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:39:47,922 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:39:47,924 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:39:47,925 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:39:54,854 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:39:54,855 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:39:54,855 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:40:00,502 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:40:00,502 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:40:00,503 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:41:56,377 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:46:24,534 INFO  TrainController:54 - [] [getTrainDetails] info message added
+2022-04-28 10:46:24,536 WARN  TrainController:55 - [] [getTrainDetails] warn message added
+2022-04-28 10:46:24,537 DEBUG TrainController:56 - [] [getTrainDetails] debug message added
+2022-04-28 10:46:56,385 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:51:56,393 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 10:56:56,401 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:01:56,418 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:06:56,423 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:11:56,431 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:16:56,438 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:21:56,456 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:26:56,461 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:31:56,469 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:46:02,948 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-00.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 11:46:02,975 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-02.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 11:46:03,112 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server cluster0-shard-00-01.qo0sr.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:631)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+2022-04-28 11:46:03,341 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:16, serverValue:25922}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 11:46:03,341 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=137308300, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-02.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6269313107f64454f267e0a8, counter=3}, lastWriteDate=Thu Apr 28 11:46:03 IST 2022, lastUpdateTimeNanos=68860172265999}
+2022-04-28 11:46:03,346 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:15, serverValue:27922}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 11:46:03,346 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qo0sr.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=263324000, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-00.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=62692b0c385bff5a1269099a, counter=4}, lastWriteDate=Thu Apr 28 11:46:03 IST 2022, lastUpdateTimeNanos=68860178460200}
+2022-04-28 11:46:03,490 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:17, serverValue:27456}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 11:46:03,491 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qo0sr.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=170277400, setName='atlas-12zgs7-shard-0', canonicalAddress=cluster0-shard-00-01.qo0sr.mongodb.net:27017, hosts=[cluster0-shard-00-02.qo0sr.mongodb.net:27017, cluster0-shard-00-00.qo0sr.mongodb.net:27017, cluster0-shard-00-01.qo0sr.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qo0sr.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000a9, setVersion=6, topologyVersion=TopologyVersion{processId=62692f3581532edb1954924f, counter=6}, lastWriteDate=Thu Apr 28 11:46:03 IST 2022, lastUpdateTimeNanos=68860322307200}
+2022-04-28 11:46:03,491 INFO  SLF4JLogger:71 - [] Discovered replica set primary cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 11:46:06,170 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:18, serverValue:27920}] to cluster0-shard-00-00.qo0sr.mongodb.net:27017
+2022-04-28 11:46:10,319 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:19, serverValue:25931}] to cluster0-shard-00-02.qo0sr.mongodb.net:27017
+2022-04-28 11:46:12,151 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:20, serverValue:27557}] to cluster0-shard-00-01.qo0sr.mongodb.net:27017
+2022-04-28 11:48:37,187 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:53:37,196 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 11:58:37,213 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 12:03:37,220 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 12:08:37,231 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 12:13:37,245 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 12:18:37,246 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-04-28 12:23:37,263 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration

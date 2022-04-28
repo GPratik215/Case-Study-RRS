@@ -1,0 +1,86 @@
+<div class="bg">
+
+<div class="col-md-6 offset-md-3" style="height: 600px; overflow-y: scroll;">
+
+    <mat-card-title> 
+        <h2 style="color: white; text-align: center;" class="font-weight-bold font-italic"> <mark>ADD TRAINS</mark></h2>
+        <!-- <h1 style="text-align: center; padding: 20px;">ADD TRAIN</h1> -->
+    </mat-card-title>
+ 
+
+    <form [formGroup]= "addTrainForm" (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+    
+        <label style="color: black;" > <h2>Train Id</h2></label>
+    
+        <input type="text" class="form-control" id="trainId"
+        [(ngModel)] = "train.trainId" name= "trainId" required formControlName="trainId">
+
+        <span *ngIf= "addTrainForm.get('trainId')?.invalid && addTrainForm.get('trainId')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <div class="form-group">
+    
+        <label style="color: black;"> <h2>Train Name</h2></label>
+    
+        <input type="text" class="form-control" id="trainName"
+        [(ngModel)] = "train.trainName" name= "trainName" required formControlName="trainName">
+
+        <span *ngIf= "addTrainForm.get('trainName')?.invalid && addTrainForm.get('trainName')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <div class="form-group">
+    
+        <label style="color: black;"> <h2>Train Day</h2></label>
+    
+        <input type="text" class="form-control" id="trainDay"
+        [(ngModel)] = "train.trainDay" name= "trainDay" required formControlName="trainDay">
+
+        <span *ngIf= "addTrainForm.get('trainDay')?.invalid && addTrainForm.get('trainDay')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <div class="form-group">
+    
+        <label style="color: black;"> <h2>Train Seat</h2></label>
+    
+        <input type="text" class="form-control" id="trainSeat"
+        [(ngModel)] = "train.trainSeat" name= "trainSeat" required formControlName="trainSeat">
+
+        <span *ngIf= "addTrainForm.get('trainSeat')?.invalid && addTrainForm.get('trainSeat')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <div class="form-group">
+    
+        <label style="color: white;"> <h2>Train Source</h2></label>
+    
+        <input type="text" class="form-control" id="trainSource"
+        [(ngModel)] = "train.trainSource" name= "trainSource" required formControlName="trainSource">
+
+        <span *ngIf= "addTrainForm.get('trainSource')?.invalid && addTrainForm.get('trainSource')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <div class="form-group">
+    
+        <label style="color: white;"> <h2>Train Destination</h2></label>
+    
+        <input type="text" class="form-control" id="trainDestination"
+        [(ngModel)] = "train.trainDestination" name= "trainDestination" required formControlName="trainDestination">
+
+        <span *ngIf= "addTrainForm.get('trainDestination')?.invalid && addTrainForm.get('trainDestination')?.touched" class="text-danger" >This field is required</span>
+    
+    </div>
+    
+    <button [disabled]= "addTrainForm.invalid" type="submit" class="btn btn-success">Submit</button>
+    
+    </form>
+    
+    
+</div>
+    
+</div>

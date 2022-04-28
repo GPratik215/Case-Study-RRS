@@ -1,0 +1,70 @@
+<div class="bg">
+
+<!-- <div class="col-md-6 offset-md-3">
+
+    <div class="container mt-5">
+      <div class="card text-center" style="padding: 10px; color: black;">
+          <h1> <b>New User Register Here..</b></h1>
+      </div>
+  </div> -->
+
+ 
+
+  <br>
+  <br>
+
+  <div class="col-md-8 offset-md-3">
+
+    <h2 style="color: white; text-align: center;" class="font-weight-bold font-italic"> <mark>USER REGISTRATION</mark></h2>
+
+    <div class="col-md-12">
+
+  <form [formGroup]= "registrationForm" (ngSubmit)= "onSubmit()">
+
+    <div class="form-group" >
+        <label style="color: white;"> <h2>User Name</h2> </label>
+        <input type="text" class="form-control" id="userName" required
+          [(ngModel)] = "register.userName" name="userName" formControlName="userName">
+
+          <span *ngIf= "registrationForm.get('userName')?.invalid && registrationForm.get('userName')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+    <div class="form-group" >
+        <label style="color: white;"> <h2>Enter First Name</h2></label>
+        <input type="text" class="form-control" id="userFirstName" required
+          [(ngModel)] = "register.userFirstName" name="userFirstName" formControlName="userFirstName">
+
+          <span *ngIf= "registrationForm.get('userFirstName')?.invalid && registrationForm.get('userFirstName')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+    <div class="form-group" >
+        <label style="color: white;"> <h2>Enter Last Name</h2></label>
+        <input type="text" class="form-control" id="userLastName" required
+          [(ngModel)] = "register.userLastName" name="userLastName" formControlName="userLastName">
+
+          <span *ngIf= "registrationForm.get('userLastName')?.invalid && registrationForm.get('userLastName')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+    <div class="form-group" >
+        <label style="color: white;"> <h2>Enter Password</h2></label>
+        <input type="password" class="form-control" id="userPassword" required
+          [(ngModel)] = "register.userPassword" name="userPassword" formControlName="userPassword">
+
+          <span *ngIf= "registrationForm.get('userPassword')?.invalid && registrationForm.get('userPassword')?.touched" class="text-danger" >This field is required</span>
+
+    </div>
+
+    <button [disabled]= "registrationForm.invalid" style="color: black;" class="btn btn-success" type="submit"> Submit </button>
+
+    <button style="color: black;" class="btn btn-info ml-3" type="reset"> Clear </button>
+
+  </form>
+
+</div>
+
+</div>
+
+</div>

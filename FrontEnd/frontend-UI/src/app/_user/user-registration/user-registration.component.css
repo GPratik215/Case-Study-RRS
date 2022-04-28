@@ -1,0 +1,18 @@
+.bg {
+    /* The image used */
+    background-image: url("/assets/register.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-control.ng-touched.ng-invalid {
+    border:2px solid red;
+  }
+  
+  .form-control.ng-touched.ng-valid {
+    border:2px solid green;
+  }
